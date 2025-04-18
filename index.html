@@ -51,6 +51,62 @@
       box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4),
         -3px -3px 10px rgba(255, 255, 255, 0.2);
     }
+
+    /* Portfolio Card Styles */
+    .portfolio-item .card {
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15),
+                 0 5px 15px rgba(0, 0, 0, 0.12);
+    }
+
+    .portfolio-item .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25),
+                 0 10px 25px rgba(0, 0, 0, 0.22);
+    }
+
+    .portfolio-content {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .portfolio-info {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .portfolio-item .card:hover .portfolio-info {
+      opacity: 1;
+    }
+
+    .view-all-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 32px;
+      background: linear-gradient(135deg, #0072FF, #00C6FF);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 114, 255, 0.2);
+    }
+
+    .view-all-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 114, 255, 0.3);
+      color: white;
+    }
+
+    .view-all-btn i {
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .view-all-btn:hover i {
+      transform: translateX(4px);
+    }
   </style>
 </head>
 
@@ -66,7 +122,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Expertise</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
@@ -535,7 +591,7 @@
                 <li>Ahmedabad, India</li>
                 <li>8866161635</li>
                 <li>ramizmirza22@gmail.com</li>
-                <li>linkedin.com/in/ramiz-mirza-38442693</li>
+                <a href="https://www.linkedin.com/in/ramiz-mirza-38442693/" target="_blank"><li>linkedin.com/in/ramiz-mirza-38442693</li></a>
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -611,273 +667,7 @@
 
     </section><!-- /Resume Section -->
 
-    <!-- Focus Industries Section -->
-    <section id="industries" class="industries section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Focus Industries</h2>
-        <p>Extensive experience in designing digital solutions across diverse industry verticals, delivering user-centric experiences that drive business growth.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row g-4">
-          <!-- Industry 1 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="industry-item industry-social text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-people-fill fs-2"></i>
-              </div>
-              <h4 class="mb-3">Social Connectivity</h4>
-              <p class="text-muted small">Designing platforms that foster meaningful connections and engagement.</p>
-            </div>
-          </div>
-
-          <!-- Industry 2 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="industry-item industry-quote text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-currency-exchange fs-2"></i>
-              </div>
-              <h4 class="mb-3">Quote Management</h4>
-              <p class="text-muted small">Streamlining quote creation and management processes.</p>
-            </div>
-          </div>
-
-          <!-- Industry 3 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="industry-item industry-manufacturing text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-gear-fill fs-2"></i>
-              </div>
-              <h4 class="mb-3">Manufacturing Systems</h4>
-              <p class="text-muted small">Optimizing manufacturing processes through intuitive interfaces.</p>
-            </div>
-          </div>
-
-          <!-- Industry 4 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="industry-item industry-business text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-graph-up fs-2"></i>
-              </div>
-              <h4 class="mb-3">Business Intelligence</h4>
-              <p class="text-muted small">Multi-location data analytics and reporting solutions.</p>
-            </div>
-          </div>
-
-          <!-- Industry 5 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="industry-item industry-fintech text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-bank fs-2"></i>
-              </div>
-              <h4 class="mb-3">Fintech</h4>
-              <p class="text-muted small">Creating secure and user-friendly financial technology solutions.</p>
-            </div>
-          </div>
-
-          <!-- Industry 6 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="industry-item industry-supply text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-truck fs-2"></i>
-              </div>
-              <h4 class="mb-3">Supply Chain Tech</h4>
-              <p class="text-muted small">Optimizing logistics and supply chain management systems.</p>
-            </div>
-          </div>
-
-          <!-- Industry 7 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="industry-item industry-engineering text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-code-square fs-2"></i>
-              </div>
-              <h4 class="mb-3">Product Engineering</h4>
-              <p class="text-muted small">Building scalable and innovative product solutions.</p>
-            </div>
-          </div>
-
-          <!-- Industry 8 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="industry-item industry-hospitality text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-headset fs-2"></i>
-              </div>
-              <h4 class="mb-3">Hospitality & CSM</h4>
-              <p class="text-muted small">Customer service and hospitality management solutions.</p>
-            </div>
-          </div>
-
-          <!-- Industry 9 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="industry-item industry-revenue text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-cash-coin fs-2"></i>
-              </div>
-              <h4 class="mb-3">Revenue Cycle</h4>
-              <p class="text-muted small">Streamlining revenue management and billing processes.</p>
-            </div>
-          </div>
-
-          <!-- Industry 10 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="industry-item industry-task text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-list-check fs-2"></i>
-              </div>
-              <h4 class="mb-3">Task Management</h4>
-              <p class="text-muted small">Efficient task and project management solutions.</p>
-            </div>
-          </div>
-
-          <!-- Industry 11 -->
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="industry-item industry-property text-center p-4 h-100">
-              <div class="icon mb-3">
-                <i class="bi bi-building fs-2"></i>
-              </div>
-              <h4 class="mb-3">Property Management</h4>
-              <p class="text-muted small">Comprehensive property management software solutions.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <style>
-        .industries .industry-item {
-          background: #fff;
-          border-radius: 10px;
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-          transition: all 0.3s ease-in-out;
-        }
-
-        .industries .industry-item:hover {
-          transform: translateY(-5px);
-        }
-
-        .industries .icon {
-          width: 72px;
-          height: 72px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto;
-          border-radius: 50%;
-          transition: all 0.3s ease-in-out;
-        }
-
-        /* Custom colors for each industry */
-        .industry-social .icon {
-          color: #4267B2;
-          background: rgba(66, 103, 178, 0.1);
-        }
-        .industry-social:hover .icon {
-          background: #4267B2;
-          color: #fff;
-        }
-
-        .industry-quote .icon {
-          color: #28a745;
-          background: rgba(40, 167, 69, 0.1);
-        }
-        .industry-quote:hover .icon {
-          background: #28a745;
-          color: #fff;
-        }
-
-        .industry-manufacturing .icon {
-          color: #fd7e14;
-          background: rgba(253, 126, 20, 0.1);
-        }
-        .industry-manufacturing:hover .icon {
-          background: #fd7e14;
-          color: #fff;
-        }
-
-        .industry-business .icon {
-          color: #6f42c1;
-          background: rgba(111, 66, 193, 0.1);
-        }
-        .industry-business:hover .icon {
-          background: #6f42c1;
-          color: #fff;
-        }
-
-        .industry-fintech .icon {
-          color: #0dcaf0;
-          background: rgba(13, 202, 240, 0.1);
-        }
-        .industry-fintech:hover .icon {
-          background: #0dcaf0;
-          color: #fff;
-        }
-
-        .industry-supply .icon {
-          color: #dc3545;
-          background: rgba(220, 53, 69, 0.1);
-        }
-        .industry-supply:hover .icon {
-          background: #dc3545;
-          color: #fff;
-        }
-
-        .industry-engineering .icon {
-          color: #20c997;
-          background: rgba(32, 201, 151, 0.1);
-        }
-        .industry-engineering:hover .icon {
-          background: #20c997;
-          color: #fff;
-        }
-
-        .industry-hospitality .icon {
-          color: #0d6efd;
-          background: rgba(13, 110, 253, 0.1);
-        }
-        .industry-hospitality:hover .icon {
-          background: #0d6efd;
-          color: #fff;
-        }
-
-        .industry-revenue .icon {
-          color: #ffc107;
-          background: rgba(255, 193, 7, 0.1);
-        }
-        .industry-revenue:hover .icon {
-          background: #ffc107;
-          color: #fff;
-        }
-
-        .industry-task .icon {
-          color: #6610f2;
-          background: rgba(102, 16, 242, 0.1);
-        }
-        .industry-task:hover .icon {
-          background: #6610f2;
-          color: #fff;
-        }
-
-        .industry-property .icon {
-          color: #d63384;
-          background: rgba(214, 51, 132, 0.1);
-        }
-        .industry-property:hover .icon {
-          background: #d63384;
-          color: #fff;
-        }
-
-        .industries h4 {
-          font-size: 1.2rem;
-          font-weight: 600;
-          margin-bottom: 15px;
-        }
-
-        .industries p {
-          line-height: 1.4;
-        }
-      </style>
-    </section><!-- End Focus Industries Section -->
+    
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -926,9 +716,9 @@
             <a href="https://www.behance.net/gallery/222411569/High-Tech-Risk-Compliance-Management-Software" target="_blank" class="text-decoration-none">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="portfolio-content position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Fitness+App" class="card-img-top img-fluid" alt="Fitness App Interface">
+                  <img src="assets/img/masonry-portfolio/2-min.png" class="card-img-top img-fluid" alt="Fitness App Interface">
                   <div class="portfolio-info position-absolute bottom-0 start-0 end-0 p-4">
-                    <h4 class="text-white mb-2">High-Tech Risk Compliance Management Software</h4>
+                    <h4 class="text-white mb-2">High-Tech Risk & Compliance Software</h4>
                     <p class="text-white-50 mb-0">Web Application</p>
                   </div>
                 </div>
@@ -941,7 +731,7 @@
             <a href="https://www.behance.net/gallery/222411453/Smart-Sync-Analytics" target="_blank" class="text-decoration-none">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="portfolio-content position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Banking+App" class="card-img-top img-fluid" alt="Banking App Redesign">
+                  <img src="assets/img/masonry-portfolio/3-min.png" class="card-img-top img-fluid" alt="Banking App Redesign">
                   <div class="portfolio-info position-absolute bottom-0 start-0 end-0 p-4">
                     <h4 class="text-white mb-2">Smart Sync Analytics</h4>
                     <p class="text-white-50 mb-0">Saas Product</p>
@@ -956,7 +746,7 @@
             <a href="https://www.behance.net/gallery/222411301/Hospitality-Customer-Service-Management" target="_blank" class="text-decoration-none">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="portfolio-content position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x400/9b59b6/ffffff?text=Travel+Booking" class="card-img-top img-fluid" alt="Travel Booking Platform">
+                  <img src="assets/img/masonry-portfolio/4-min.png" class="card-img-top img-fluid" alt="Travel Booking Platform">
                   <div class="portfolio-info position-absolute bottom-0 start-0 end-0 p-4">
                     <h4 class="text-white mb-2">Hospitality & Customer Service Management</h4>
                     <p class="text-white-50 mb-0">Mobile App</p>
@@ -971,7 +761,7 @@
             <a href="https://www.behance.net/gallery/221433401/AI-Photo-Finder" target="_blank" class="text-decoration-none">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="portfolio-content position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x400/f1c40f/ffffff?text=Food+Delivery" class="card-img-top img-fluid" alt="Food Delivery App">
+                  <img src="assets/img/masonry-portfolio/6-min.png" class="card-img-top img-fluid" alt="Food Delivery App">
                   <div class="portfolio-info position-absolute bottom-0 start-0 end-0 p-4">
                     <h4 class="text-white mb-2">AI Photo Finder</h4>
                     <p class="text-white-50 mb-0">Mobile App</p>
@@ -986,7 +776,7 @@
             <a href="https://www.behance.net/gallery/222411029/Smart-TeleHealth-Solutions" target="_blank" class="text-decoration-none">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="portfolio-content position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x400/f1c40f/ffffff?text=Food+Delivery" class="card-img-top img-fluid" alt="Food Delivery App">
+                  <img src="assets/img/masonry-portfolio/7-min.png" class="card-img-top img-fluid" alt="Food Delivery App">
                   <div class="portfolio-info position-absolute bottom-0 start-0 end-0 p-4">
                     <h4 class="text-white mb-2">Smart TeleHealth Solutions</h4>
                     <p class="text-white-50 mb-0">Mobile App</p>
@@ -1001,7 +791,7 @@
             <a href="https://www.behance.net/gallery/221432943/Social-And-Event-Plateform" target="_blank" class="text-decoration-none">
               <div class="card h-100 border-0 shadow-sm">
                 <div class="portfolio-content position-relative overflow-hidden">
-                  <img src="https://placehold.co/600x400/f1c40f/ffffff?text=Food+Delivery" class="card-img-top img-fluid" alt="Food Delivery App">
+                  <img src="assets/img/masonry-portfolio/8-min.png" class="card-img-top img-fluid" alt="Food Delivery App">
                   <div class="portfolio-info position-absolute bottom-0 start-0 end-0 p-4">
                     <h4 class="text-white mb-2">Social And Event Plateform</h4>
                     <p class="text-white-50 mb-0">Mobile App & Admin Dashboard</p>
@@ -1013,6 +803,13 @@
 
 
         </div>
+        
+        <!-- View All Button -->
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://www.behance.net/ramizmirza" target="_blank" class="view-all-btn">
+            View All Projects <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
       </div>
 
     </section><!-- /Portfolio Section -->
@@ -1022,7 +819,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
+        <h2>Expertise</h2>
         <p>As a Lead Product Designer, I offer comprehensive design solutions that combine user-centered thinking with strategic business objectives. Here are the key services I provide:</p>
       </div><!-- End Section Title -->
 
@@ -1085,7 +882,7 @@
             <div class="service-item item-indigo position-relative">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,558.5317968840102,300,566.797414625762"></path>
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.5754009179313,558.5317968840102,300,566.797414625762"></path>
                 </svg>
                 <i class="bi bi-diagram-3"></i>
               </div>
